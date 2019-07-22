@@ -6,12 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.bwie.ksonview.widget.DotRandomView
+        android:id="@+id/randomView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="添加"
+            android:onClick="add"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="清除"
+            android:layout_weight="1"
+            android:onClick="add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" android:orientation="vertical">
 
-        <com.bwie.ksonview.widget.DotView
+        <com.bwie.ksonview.widget.LineView
             android:id="@+id/myview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.bwie.ksonview.widget.DotRandomView;
 import com.bwie.ksonview.widget.TimeView;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void flowLayout(View view) {
+
+    }
+
+    public void add(View view) {
+
+        DotRandomView dotRandomView  = findViewById(R.id.randomView);
+        dotRandomView.addDot();
 
     }
 }
